@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/signup.css" />
+    <script defer src="./js/signup.js"></script>
     <title>회원가입</title>
   </head>
   <body>
     <div class="container">
       <h1>회원가입을 환영합니다.</h1>
-      <form method="get">
+      <form onsubmit="check_sign(event)" method="get">
         <fieldset>
           <legend>사용자 정보</legend>
           <ul>
@@ -25,7 +27,7 @@
             </li>
             <li>
               <label for="email">이메일</label>
-              <input type="email" , name="email" , id="email" />
+              <input type="email" name="email" id="email" />
             </li>
             <li>
               <label for="pwd">비밀번호</label>
@@ -38,14 +40,14 @@
             </li>
             <li>
               <label for="confirm">비밀번호 확인</label>
-              <input type="password" , id="confirm" />
+              <input type="password" id="confirm" />
             </li>
             <li>
               <label for="path">가입 경로</label>
               <select name="password" id="path">
                 <option value="blog">블로그</option>
                 <option value="search">검색</option>
-                <option value="sns">SNSN</option>
+                <option value="sns">SNS</option>
                 <option value="etc">기타</option>
               </select>
             </li>
@@ -60,7 +62,7 @@
           <input type="radio" name="mail" id="mail_yes" value="yes" checked />
           <label for="mail_yes">메일 수신</label>
           <input type="radio" name="mail" id="mail_no" value="no" />
-          <label for="mail_no">메일 수신</label>
+          <label for="mail_no">메일 수신 안 함</label>
         </fieldset>
         <fieldset>
           <legend>이동수단</legend>
