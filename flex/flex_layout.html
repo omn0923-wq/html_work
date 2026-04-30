@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: center;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        width: 1500px;
+      }
+      header {
+        border-bottom: 1px solid gray;
+      }
+      footer {
+        border-top: 1px solid gray;
+      }
+      nav {
+        border-right: 1px solid gray;
+      }
+      aside {
+        border-left: 1px solid gray;
+      }
+      nav,
+      aside {
+        /* 너비 고정 */
+        flex-basis: 150px;
+        /* 다른 거 희생 */
+        flex-shrink: 0;
+      }
+      .content {
+        display: flex;
+      }
+      main {
+        text-align: justify;
+        padding: 10px;
+        column-count: 4;
+        column-width: 200px;
+        column-gap: 20px;
+        column-rule-color: red;
+        column-rule-style: solid;
+        column-rule-width: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Holy Grail Layout</h1>
+      </header>
+      <section class="content">
+        <nav>
+          <ul>
+            <li>main</li>
+            <li>about</li>
+            <li>help</li>
+          </ul>
+        </nav>
+        <main>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum ea
+          exercitationem est, doloremque error soluta dolores quasi. Harum
+          cumque officiis nam, assumenda architecto, minus sint modi reiciendis
+          natus enim quibusdam. Ut magnam, natus exercitationem ullam vel ea
+          quaerat deleniti tempore molestias a accusamus illo eos minus facere
+          aliquid, quidem sint labore animi excepturi? Veritatis ipsa provident
+          ipsum suscipit aspernatur quos? Doloribus nam voluptas, delectus,
+          fugiat in eligendi aliquam, nulla sit eius consequuntur iusto eaque.
+          Dolorem architecto quas consequatur numquam sapiente saepe, eum earum
+          ratione sed beatae eius excepturi perspiciatis assumenda. Ex
+          reiciendis nobis odit quo praesentium ipsam, dolorum, ut cumque ipsum
+          ea, aut enim voluptatibus? Fugit numquam suscipit accusamus nihil quod
+          corporis tempora saepe, assumenda inventore voluptatum iste quis quae.
+          Eligendi aliquid sint et eius id fugit ducimus quas fuga laboriosam
+          provident recusandae iste dolore veniam, accusantium unde facere,
+          facilis blanditiis! Voluptates vero amet alias quo numquam ab fugit
+          voluptatum. Perspiciatis modi temporibus officiis, praesentium nostrum
+          dolor illum expedita, ea nisi, minima voluptatibus. Numquam, ratione?
+          Asperiores, dolorum! Doloremque in iusto tempore ipsa nesciunt maxime
+          fugiat, repellendus libero dolorem odit itaque. Deleniti porro, ea
+          dolores perspiciatis qui cupiditate voluptatem quasi error sunt fugit
+          natus sed animi voluptates nemo voluptas nobis maiores maxime quis
+          possimus dolorem itaque tempora voluptatibus necessitatibus? Quisquam,
+          nostrum? Doloremque et atque possimus, harum totam veritatis vitae
+          asperiores magni laborum tenetur, iure perspiciatis dolorem veniam
+          nisi assumenda dicta voluptatibus! Laboriosam dolor voluptatum ab quo
+          velit tenetur deserunt facere doloremque! Magnam doloribus sequi optio
+          nobis molestiae repellat nihil dicta magni aspernatur id, vel
+          asperiores maiores corporis ut deleniti voluptas quae eius quidem odio
+          architecto quo. Fugit ipsam quia voluptate qui. Dignissimos aliquam
+          incidunt assumenda praesentium corrupti possimus, vero, architecto
+          odit perferendis itaque necessitatibus repellendus eius labore
+          molestias, numquam cum quaerat exercitationem. Dolor libero vitae
+          architecto quo fugit incidunt ex! Asperiores.
+        </main>
+        <aside>AD (광고)</aside>
+      </section>
+      <footer>
+        <a href="www.naver.com">홈페이지</a>
+      </footer>
+    </div>
+  </body>
+</html>
